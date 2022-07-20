@@ -2,6 +2,15 @@
 
 [DEMO | Stackblitz](https://stackblitz.com/github/theruslanusmanov/angular-feature-structure)
 
+Simple example of app structure.
+
+## Structure
+- app
+  - feed - Main page, list of posts
+  - post - Detail page of post item
+  - shared - All common components in app
+  - app-routing.module.ts - All app routes
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
 ## Development server
