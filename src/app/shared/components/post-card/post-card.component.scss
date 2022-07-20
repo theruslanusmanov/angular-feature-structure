@@ -1,0 +1,14 @@
+:host {
+  cursor: pointer;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid black;
+  padding: 24px;
+  box-sizing: border-box;
+  transition: 200ms;
+  min-width: 720px;
+
+  &:hover {
+    background-color: #e5fff8;
+  }
+}

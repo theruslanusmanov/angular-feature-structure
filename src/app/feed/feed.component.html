@@ -1,0 +1,6 @@
+<h2>Posts</h2>
+<ul *ngIf="posts$ | async as posts" [@list]="posts.length">
+  <li *ngFor="let post of posts; index as i">
+    <app-post-card class="post" [post]="post" [routerLink]="[i]"></app-post-card>
+  </li>
+</ul>

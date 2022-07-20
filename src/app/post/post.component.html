@@ -1,0 +1,4 @@
+<h2>Post</h2>
+<ng-container *ngIf="post$ | async as post">
+  <app-post-card [post]="post"></app-post-card>
+</ng-container>

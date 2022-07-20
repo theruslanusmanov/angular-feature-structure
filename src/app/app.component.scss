@@ -1,0 +1,11 @@
+.app-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.title {
+  cursor: pointer;
+}
