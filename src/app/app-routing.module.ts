@@ -1,7 +1,16 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    loadChildren: () => import('./feed/feed.module').then(m => m.FeedModule)
+  },
+  {
+    path: ':id',
+    loadChildren: () => import('./post/post.module').then(m => m.PostModule)
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
